@@ -5,6 +5,8 @@
      данных наборов из трех чисел: (A1, B1, C1) и (A2, B2, C2).*/
 
 using System;
+
+namespace foo
 {
     class Program
     {
