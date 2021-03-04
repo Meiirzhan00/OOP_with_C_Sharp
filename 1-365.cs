@@ -23,6 +23,8 @@ static void Main(string[] args)
                     case 6: Console.WriteLine("1. Monday"); break;
 
                 }
+                
+                flag = false;
 
             }
         }
