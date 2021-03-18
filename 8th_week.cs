@@ -2,13 +2,11 @@
      * 2-7 лабораториялық жұмыстарда берілген әдістердің 
      * жұмысына қажетті өрнектерді кеңейтуші әдіс ретінде жүзеге асырыңыз. */
 
+
 using System;
 
 namespace OOP2
 {
-
-    namespace foo
-    {
         public static class Bolshek_san
         {
             public static void Kobeytu(this int san, int butin_san, int boletin_san)
@@ -47,5 +45,6 @@ namespace OOP2
                 Console.WriteLine();
             }
         }
-    }
+    
 }
+
