@@ -16,3 +16,21 @@ def reverse():
 
 reverse()
 
+
+
+=======================================================
+
+
+def Markov():
+    n=input("Екілік санды енгіз : ")
+    s=''
+    for i in n:
+          if i=='0':
+            s+=i.replace('0','1')
+          else:
+            s+=i.replace('1','0')
+
+    print(f"Шешімі :\t\t\t {s}")
+
+
+Markov()
