@@ -39,13 +39,13 @@ namespace OOP2
         public void ShygaruSZ()
         {
             Console.WriteLine($"a = {a} , b = {b}\n");
-            if (b<0) { Console.WriteLine($"{a}x {b} = 0"); }
+            if (b<0) { Console.WriteLine($"{a}x - {-b} = 0"); }
             else { Console.WriteLine($"{a}x + {b} = 0"); }
         }
         public override double Syzykty_tendeu()
         {
 
-            if (a>0 || b>0 && a<0 || b<0) { return x = -1*(b / a); }
+            if (a>0 || b>0 && a<0 || b<0) { return x = -(b / a); }
             else if (a>0 || b<0 && a<0 || b>0) { return x =  b / a; }
             else { return 0 ; }
         }
@@ -73,7 +73,7 @@ namespace OOP2
             Console.WriteLine($"a = {a}, b = {b}, c = {c}\n");
             if(a>0 && b>0 && c > 0) { Console.WriteLine($"{a}x^2 + {b}x + {c} = 0"); }
             else if (a>0 && b>0 && c<0) { Console.WriteLine($"{a}x^2 + {b}x - {-c} = 0"); }
-            else if (a > 0 && b < 0 && c > 0) { Console.WriteLine($"{a}x^2 - {-1*b}x + {c} = 0"); }
+            else if (a > 0 && b < 0 && c > 0) { Console.WriteLine($"{a}x^2 - {-b}x + {c} = 0"); }
             else if (a < 0 && b > 0 && c > 0) { Console.WriteLine($"{a}x^2 + {b}x - {-c} = 0"); }
             else { Console.WriteLine($"{a}x - {-b}x - {-c} = 0"); }
 
@@ -90,7 +90,7 @@ namespace OOP2
             }
             else if (D == 0)
             {
-                x1 = x2 = -1*b / 2 * a;
+                x1 = x2 = -b / 2 * a;
                 Console.WriteLine($"x1 = x2 = {x1}");
             }
             else { Console.WriteLine($"Shehimi zhok, sebebi {D}<0 ."); }
@@ -106,7 +106,7 @@ namespace OOP2
 
         static void Main(string[] args)
         {
-            Syzykty syzyk = new Syzykty(-10,15,5);
+            Syzykty syzyk = new Syzykty(10,-15,5);
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("Syzykty tendeu sheshimi !");
             Console.ResetColor();
