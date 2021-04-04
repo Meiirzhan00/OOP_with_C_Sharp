@@ -1,12 +1,6 @@
-/* 7-нұсқа
-           Түбір абстрактылы базалық класын құрып, оның құрамында түбірлерді есептеп, нәтижені экранға шығару абстрактылы әдістерін анықтаңыз. 
-           Бұл кластан туынды Сызықтық және Квадрат кластарын құрып, олардың құрамында сәйкесінше, сызықтық және квадрат теңдеулер түбірлерін табу және 
-           экранға шығару әдістерін қайта анықтаңыз. Аталған кластар құрамында қажетті өрістерді және оларды базалық немесе туынды класта анықтаудың 
-           дұрыстығы туралы шешімді өзіңіз қабылдаңыз.
- */
-
 using OOP2;
 using System;
+using System.Collections.Generic;
 
 namespace OOP2
 {
@@ -61,6 +55,7 @@ namespace OOP2
             this.magNumber = magNumber;
             this.yearRel = yearRel;
         }
+
         public override void Shygaru()
         {
             throw new NotImplementedException();
@@ -81,7 +76,10 @@ namespace OOP2
 
         public OnlineResource(string authorName, string authorSurname,string link, string annotation)
         {
-
+            this.authorName = authorName;
+            this.authorSurname = authorSurname;
+            this.link = link;
+            this.annotation = annotation;
         }
         public override void Shygaru()
         {
@@ -99,7 +97,11 @@ namespace OOP2
 
         static void Main(string[] args)
         {
-           
+            List<Book> books = new List<Book>();
+            List<Article> articles = new List<Article>();
+            List<OnlineResource> onlineResources=new List<OnlineResource>();
+
+            
         }
         static void Line()
         {
