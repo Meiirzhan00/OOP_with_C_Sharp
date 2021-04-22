@@ -1,3 +1,8 @@
+/*
+    10. Функция вычисляет целую часть неправильной дроби, 
+    представленной числителем и знаменателем - целыми числами.
+*/
+
 using System;
 
 namespace OOP2
@@ -21,7 +26,7 @@ namespace OOP2
                 
                 else 
                 {
-                    Console.WriteLine($"Butin bolik : {alym/bolim}\n");
+                    Console.WriteLine($"Butin bolik : { mani }\n");
                 }
             }
             
