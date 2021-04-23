@@ -13,7 +13,7 @@ namespace OOP2
         {
             try
             {
-                Console.Write("\nBolshe alymyn engiz : ");
+                Console.Write("\nBolshek alymyn engiz : ");
                 int alym = int.Parse(Console.ReadLine());
                 Console.Write("Bolshek bolimin engiz : ");
                 int bolim = int.Parse(Console.ReadLine());
@@ -21,7 +21,7 @@ namespace OOP2
 
                 if ( bolim>alym)
                 {
-                    throw new Exception("Bul durys bolshek. Bizge burys bolshek kerek !\n");
+                    throw new Exception("Burys bolshek emes !\n");
                 }
                 
                 else 
